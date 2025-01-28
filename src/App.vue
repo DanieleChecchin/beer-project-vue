@@ -1,13 +1,20 @@
 <script>
 
 import { RouterView } from 'vue-router';
+import AppFooter from './components/AppFooter.vue';
+import AppHeader from './components/AppHeader.vue'
 
 </script>
 
 <template>
 
+  <AppHeader />
   <RouterView />
+  <AppFooter />
 
 </template>
 
-<style></style>
+<style lang="scss">
+@use "bootstrap/scss/bootstrap.scss" as *;
+@use "./styles/general.scss" as *;
+</style>
